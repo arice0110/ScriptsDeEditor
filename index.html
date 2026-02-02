@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Triple Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="editor-container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('html')">HTML</button>
+            <button class="tab-btn" onclick="switchTab('css')">CSS</button>
+            <button class="tab-btn" onclick="switchTab('js')">JavaScript</button>
+        </div>
+
+        <div class="toolbar">
+            <button id="copy-raw">Copiar Código Limpio</button>
+            <button id="copy-numbered">Copiar con Números</button>
+        </div>
+        
+        <div class="editor-wrapper">
+            <div id="line-numbers">1</div>
+            <textarea id="editor" spellcheck="false" placeholder="Escribe aquí..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
