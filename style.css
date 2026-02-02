@@ -1,0 +1,90 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.editor-container {
+    width: 95%;
+    max-width: 900px;
+    background: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.tabs {
+    display: flex;
+    background: #252525;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    background: #2d2d2d;
+}
+
+.toolbar {
+    padding: 10px;
+    background: #3c3c3c;
+    display: flex;
+    gap: 10px;
+}
+
+button:not(.tab-btn) {
+    background: #4caf50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#copy-numbered { background: #2196f3; }
+
+.editor-wrapper {
+    display: flex;
+    height: 450px;
+}
+
+#line-numbers {
+    width: 45px;
+    background: #252525;
+    color: #606060;
+    text-align: right;
+    padding: 10px 5px;
+    user-select: none;
+    line-height: 1.5;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#editor {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #e0e0e0;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: inherit;
+    white-space: pre;
+    overflow: auto;
+}
+
